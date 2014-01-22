@@ -7,7 +7,7 @@
 %\setmathfont(Digits,Greek,Latin){Garamond}
 
 \usepackage[usenames,dvipsnames]{color}
-\usepackage[colorlinks=true, urlcolor=NavyBlue]{hyperref}
+\usepackage[colorlinks=true, urlcolor=NavyBlue, linkcolor=black]{hyperref}
 \usepackage{graphicx}
 
 \title{Mapping basics in R, a brief tutorial}
@@ -55,7 +55,9 @@ package.\footnote{\texttt{ggplot} stands for “Grammar of Graphics” plot;
     a notion which should appeal to us linguists.}  The
 \href{http://www.cookbook-r.com/Graphs/}{Cookbook for R} website’s
 section on graphs has many applied examples of using ggplot to make
-several kinds of graphs (but not maps, sadly!)
+several kinds of graphs (but not maps, sadly!)  Notably, there is useful
+info on how to change the colors used for points, a common complaint
+about ggplot’s defaults.
 
 The example code attached shows you how to create maps in R using \texttt{ggplot2} and the \href{http://cran.r-project.org/web/packages/maps/maps.pdf}{\texttt{maps} package}. We will be using the ``state" map in this tutorial; this gives us a pre-defined map of the U.S. with state boundaries. Other pre-defined maps are available via this package (see documentation), but should the area you're working on not be included in this way, you can always use the ``world" map and set your x and y axis limits to only plot the part of the world you're interested in.
 
