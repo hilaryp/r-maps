@@ -3,7 +3,7 @@
 \usepackage{fullpage}
 
 \usepackage{mathspec}
-\setmainfont[Mapping=tex-text]{Linux Libertine}
+\setmainfont[Mapping=tex-text]{Linux Libertine O}
 %\setmathfont(Digits,Greek,Latin){Garamond}
 
 \usepackage[usenames,dvipsnames]{color}
@@ -66,7 +66,7 @@ Now that we've covered the preliminaries, let's look at an example of how to bui
 \begin{enumerate}
 \item The current version of R (\url{http://lib.stat.cmu.edu/R/CRAN/}) or RStudio (a much nicer user interface for R: \url{http://www.rstudio.com/})
 \item The \texttt{maps}, \texttt{ggplot2}, and \texttt{ggmap}
-  packages. In R, do: \texttt{install.packages(c("maps", "ggplot2", "ggmap"))}
+  packages. In R, do: \\ \texttt{install.packages(c("maps", "ggplot2", "ggmap"))}
 \end{enumerate}
 
 Once you have those, open up \texttt{telsur-example.R} in R. For anyone unfamiliar with what R code looks like, all the grey lines with a pound symbol (\#) at the beginning are my commentary and instructions. All other lines are for you to copy/paste into your R prompt. On a Mac, you can also highlight a line of code and hit Command + Enter to execute it.
@@ -90,11 +90,9 @@ I've already mentioned Joe Fruehwald's R Study Group materials, but I'll mention
 \subsection{More advanced mapping to explore}
 \begin{enumerate}
 \item Topography: Terrain maps can be created with \texttt{RgoogleMaps}:\\ \url{http://www.molecularecologist.com/2012/09/making-maps-with-r/}
-\item Rivers: or just add rivers to a map using the "rivers" map in \texttt{mapdata}.
-\item ggplot: The \texttt{ggplot2} package offers an alternative to mapping in base graphics, with all the features we love about regular ggplotting:\\
-\url{http://docs.ggplot2.org/current/geom_map.html}\\
-Or explore \texttt{ggmap} for integration with Google Maps and OpenStreetMap:\\
+\item Or explore \texttt{ggmap} for integration with Google Maps and OpenStreetMap:\\
 \url{http://cran.r-project.org/web/packages/ggmap/ggmap.pdf}
+\item Or just add rivers to a map using the ``rivers" map in \texttt{mapdata}.
 \item Choropleth maps are another attractive option, when it would be more appropriate to color-code entire counties or states rather than plotting individual points. This blog post has a variety of solutions to the same mapping problem:\\
 \url{http://blog.revolutionanalytics.com/2009/11/choropleth-challenge-result.html}
 \item Animated gifs! Not just for buzzfeed anymore. Aaron Ecay has been exploring the use of animated maps to display diachronic change in syntactic variables. You should talk to him if this seems like something you'd be interested in doing.

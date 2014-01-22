@@ -1,4 +1,5 @@
 # telsur-example.R by Hilary Prichard, 13 Jan. 2014
+# ggplot updates by Aaron Ecay
 # This file walks you through the code to create a basic ANAE-style map.
 
 # If you haven't already installed the needed packages, uncomment this line
@@ -16,7 +17,7 @@ telsur <- read.csv("telsur-example.csv")
 # Have a look at the data, does everything look fine?
 summary(telsur)
 
-# Add a new column, color-coding the o_oh variable
+# Add a new column, coding the o_oh variable
 # using 'with' here allows you to reference the column name directly
 telsur$o_oh_level<- with(telsur,
                          ifelse(o_oh == 0, "merged",
@@ -38,11 +39,11 @@ map.raw <- map("state",      # Which map to plot
                fill = TRUE)  # We want the states to be solid on the inside,
                              # not hollow.
 
-map.data <- fortify(map.raw) # Now the data are in a fromat ggplot
+map.data <- fortify(map.raw) # Now the data are in a format ggplot
                              # understands; the details of this format are not
                              # so important to us.
 
-# Let's make a plot!  Ggplot nicely lets us build up the plot incrementally,
+# Let's make a plot!  Ggplot lets us build up the plot incrementally,
 # which is nice if you are not sure what you want it to look like exactly.
 
 # The root of a ggplot is the ggplot object.  This contains an aes(thetic)
