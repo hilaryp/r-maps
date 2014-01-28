@@ -21,8 +21,8 @@ summary(telsur)
 # using 'with' here allows you to reference the column name directly
 telsur$o_oh_level<- with(telsur,
                          ifelse(o_oh == 0, "merged",
-                                ifelse(o_oh > 0 & o_oh <= 19, "/o/",
-                                       ifelse(o_oh > 19, "/oh/", NA))))
+                                ifelse(o_oh > 0 & o_oh <= 19, "close",
+                                       ifelse(o_oh > 19, "distinct", NA))))
 
 # Now if you look at the first few rows of telsur, you'll see the new column
 head(telsur)
