@@ -5,9 +5,10 @@ Creative Commons Attribution-ShareAlike v4
 discretion.  The "data files" are provided for purposes of illustration
 only, and you should not redistribute them.
 
-The javascript code in tooltips.r was modified from
-<https://sjp.co.nz/projects/gridsvg/demos/tooltips/>, and is available
-under the GPL v. 2+ (and not any Creative Commons license).
+The javascript code in tooltips.r and tooltip.js (two identical copies)
+was modified from <https://sjp.co.nz/projects/gridsvg/demos/tooltips/>,
+and is available under the GPL v. 2+ (and not any Creative Commons
+license).
 
 Source files:
 - r-maps-tutorial.tex
