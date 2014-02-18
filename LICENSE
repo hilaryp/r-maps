@@ -1,7 +1,25 @@
-The files "r-maps-tutorial.tex" and "telsur-example.R," as well as the
-generated files "r-maps-tutorial.pdf" and "telsur-example.pdf" are
-available under the GPL v3 (https://www.gnu.org/licenses/gpl-3.0.txt) or
-the Creative Commons Attribution-ShareAlike v4
+The "source files" and "generated files" listed below are available
+under the GPL v3 (https://www.gnu.org/licenses/gpl-3.0.txt) or the
+Creative Commons Attribution-ShareAlike v4
 (https://creativecommons.org/licenses/by-sa/4.0/) licenses, at your
-discretion.  The "telsur-example.csv" file is provided for purposes of
-illustration only, and you should not redistribute it.
+discretion.  The "data files" are provided for purposes of illustration
+only, and you should not redistribute them.
+
+The javascript code in tooltips.r was modified from
+<https://sjp.co.nz/projects/gridsvg/demos/tooltips/>, and is available
+under the GPL v. 2+ (and not any Creative Commons license).
+
+Source files:
+- r-maps-tutorial.tex
+- telsur-example.pdf
+- telsur-example.R
+- tooltips.r (except javascript contained therein)
+
+Generated files:
+- r-maps-tutorial.pdf
+- telsur-example.pdf
+- u.svg
+
+Data files:
+- telsur-example.csv
+- HOUSE.csv
