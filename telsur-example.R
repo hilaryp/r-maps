@@ -99,18 +99,18 @@ final.plot <- nice.plot +
 
 print(final.plot)
 
-# This looks pretty good! Ultimately you'll want to save your maps;
-# I recommend saving as a pdf, using cairo_pdf(). For journal submission,
-# you may be asked for higher-quality images, in which case use svg().
-# Here's the full code for saving this map as a pdf:
+# This looks pretty good! Ultimately you'll want to save your maps; I
+# recommend saving as a pdf, using pdf(). For journal submission, you may be
+# asked for higher-quality images, in which case use svg().  Here's the full
+# code for saving this map as a pdf:
 
-cairo_pdf("telsur-example.pdf", width = 6.5, height = 4,
-          pointsize = 12, family = "Times")
+pdf("telsur-example.pdf", width = 6.5, height = 4,
+    pointsize = 12, family = "Times")
 print(final.plot)
 dev.off()
 
-# Note that within cairo_pdf() you can specify map size, font size, and
-# font family. Always follow your map code with dev.off() - this tells R you're
+# Note that within pdf() you can specify map size, font size, and font
+# family. Always follow your map code with dev.off() - this tells R you're
 # done adding things to the plot, it's time to create the file.
 
 # Congrats, now you have your first map!
